@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    height: 65px;
+    width: 80px;
+    margin-left: 50px;
+}
+
+body{
+    background-image: url(/images/PTM/steptodown.com757438.jpg);
+    background-size: cover;
+    background-position: fixed;    
+}
+
+.nav-item{
+    border: 2px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 9px;
+}
+.nav-item>a:hover{
+    background-color: teal;
+    color: black !important;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+#carouselExample{
+    width: 95.4em;
+    margin-left: -120px;
+}
+
+.d-block{
+    height: 700px;
+    width: 95.4em;
+}
+
+#about{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sticky-footer{
+    margin-top: 150px;
+    height: 100px;
+    width: 95em;
+    margin-left: -115px;
+}

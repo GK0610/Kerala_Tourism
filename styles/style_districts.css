@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    height: 65px;
+    width: 80px;
+    margin-left: 50px;
+}
+
+body{
+    background-image: url(../images/munnar.jpg);
+    background-size: cover;
+    background-position: fixed;    
+}
+
+.nav-item{
+    border: 2px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 9px;
+}
+.nav-item>a:hover{
+    background-color: teal;
+    color: black !important;
+}
+.container{
+    margin-top: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.h1h{
+    position: relative;left: 5em;
+    color: black;
+    text-decoration: underline 1px;
+}
+
+.ol1{
+    position: relative;left: 12em;
+    color: black
+}
+
+.li1{
+    color: rgb(4, 24, 60);
+     
+}
