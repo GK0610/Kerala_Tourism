@@ -46,38 +46,49 @@
       <div class="container">
       <div class="col sm-12 col-md-5 col-lg-5 col-xl-5 text-center">
 
-        <form class="formlog p-5">
+        <form class="formlog p-5" action="" onsubmit="return verify() || validate1() || validate2() || validate3()" >
           <h3 class="text-center">SignUp</h3>
           <br>
 
           <div class="mb-3"> 
             <label for="exampleInputName" class="form-label">Name</label>
-            <input type="text" class="form-control" placeholder="Name">
+            <input type="text" class="form-control" placeholder="Name" id="username">
           </div>
+          
+          <div class="mb-3"> 
+            <label for="exampleInputName" class="form-label">Email ID</label>
+            <input type="email" class="form-control" placeholder="Email ID" id="email1">
+            <span id ="err1"></span>
+          </div>
+         
 
           <div class="mb-3"> 
             <label for="exampleInputName" class="form-label">Mobile No</label>
-            <input type="text" class="form-control" placeholder="Mobile Number">
+            <input type="text" class="form-control" placeholder="Mobile Number" id="mobileno">
+            <span id ="err3"></span>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Set Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter a new password">
+            <input type="password" class="form-control" id="password1" placeholder="Enter a new password">
+            <span id ="err2"></span>
           </div>
+          
+      
+          <br>
 
-
-
-
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm New Password">
+          <!-- <div class="mb-3">
+            <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm New Password">
           </div>
+           -->
+        
           
           <button id="log_b" type="submit" class="btn btn-primary">Sign Up</button>
           <br>
           <br>
         </form>
+        <script src="signup_script.js"></script>
       </div>
     </div>
 

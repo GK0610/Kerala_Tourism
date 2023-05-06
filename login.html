@@ -43,17 +43,21 @@
       <div class="container">
       <div class="col sm-12 col-md-8 col-lg-8 col-xl-8 text-center">
 
-        <form class="formlog p-5">
+        <form class="formlog p-5" action="" onsubmit="return verify() || validate1()|| validate2()">
           <h3 class="text-center">User LogIn</h3>
           <div class="mb-3"> 
-            <label for="exampleInputEmail1" class="form-label">Username</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          
+            <label for="exampleInputEmail1" class="form-label">Email-Id</label>
+            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter the Email-id">
+            <span id ="err1"></span>
           </div>
+          
+
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" id="password1" placeholder="Enter the Password">
+            <span id ="err2"></span>
           </div>
+         
           
           <button id="log_b" type="submit" class="btn btn-primary">Login</button>
           <br>
@@ -61,6 +65,7 @@
           <h6>Need an Account</h6>
           <a href='signup.html'>Sign Up</a>
         </form>
+        <script src="login_script.js"></script>
       </div>
     </div>
  
