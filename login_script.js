@@ -46,7 +46,6 @@ function validate1(){
     function validate2() {
         if(strongPassword.test(passw.value)) {
             error2.style.backgroundColor = "green";
-            error2.textContent = 'Strong';
             // error2.innerText='Strong'
             // error2.style.color='green';
     

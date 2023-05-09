@@ -16,11 +16,6 @@ else if(passw.value.length<8)
     error2.innerText='Password must contain 8 characters'
     error2.style.color='Red';
 }
-// else if(num1.value.length<10 validate3())
-// {
-//     error3.innerText='Mobile must contain 10 numbers'
-//     error3.style.color='Red';
-// }
 
 else{
     alert('Form submitted!!!');
@@ -53,20 +48,20 @@ else{
 }
 }
 
-let regex2=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+let regex2=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
 
 function validate3()
 {
    
     if(regex2.test(num1.value))
     {
-        error3.innerText='Mobile is valid'
+         error3.innerText='Mobile is valid'
          error3.style.color='green';
          return true;
 
     }
     else{
-        error3.innerText='Mobile is invalid'
+         error3.innerText='Mobile is invalid'
          error3.style.color='Red';
          return false;
 
