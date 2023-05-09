@@ -80,19 +80,20 @@ let regex2=/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
 function validate3()
 {
+    
     if(regex2.test(num1.value)) 
     {
         // error3.style.backgroundColor = "green";
         // error3.textContent = 'Mobile No is valid'
 
-        error3.innerText='Mobile No is valid'
+        error3.innerText='Mobile No is valid';
         error3.style.color='Green';
     }
     else{
         // error3.style.backgroundColor = 'red';
         // error3.textContent = 'Mobile No is invalid';
 
-        error3.innerText='Mobile No is invalid'
+        error3.innerText='Mobile No is invalid';
         error3.style.color='Red';
     }
 
