@@ -16,6 +16,11 @@ else if(passw.value.length<8)
     error2.innerText='Password must contain 8 characters'
     error2.style.color='Red';
 }
+else if(num1.value.length<10)
+{
+    error3.innerText='Mobile must contain 10 characters'
+    error3.style.color='Red';
+}
 
 else{
     alert('Form submitted!!!');
