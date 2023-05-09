@@ -3,7 +3,7 @@ var passw=document.getElementById("password1");
 var usname=document.getElementById("username");
 var error1=document.getElementById("err1");
 var error2=document.getElementById("err2");
-var num1=document.getElementById("mobileno");
+var num1=document.getElementById("mobileno1");
 var error3=document.getElementById("err3");
 
 function verify(){
@@ -16,7 +16,11 @@ else if(passw.value.length<8)
     error2.innerText='Password must contain 8 characters'
     error2.style.color='Red';
 }
-
+// else if(num1.value.length<10 validate3())
+// {
+//     error3.innerText='Mobile must contain 10 numbers'
+//     error3.style.color='Red';
+// }
 
 else{
     alert('Form submitted!!!');
@@ -49,6 +53,30 @@ else{
 }
 }
 
+let regex2=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+function validate3()
+{
+   
+    if(regex2.test(num1.value))
+    {
+        error3.innerText='Mobile is valid'
+         error3.style.color='green';
+         return true;
+
+    }
+    else{
+        error3.innerText='Mobile is invalid'
+         error3.style.color='Red';
+         return false;
+
+    
+    }
+
+}
+
+
+
 
 // var passw=document.getElementById("exampleInputPassword1");
 // var error2=document.getElementById("err2");
@@ -74,28 +102,5 @@ function validate2() {
         // error2.innerText='Week'
         // error2.style.color='Red';
     }
-}
-
-let regex2=/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-
-function validate3()
-{
-    
-    if(regex2.test(num1.value)) 
-    {
-        // error3.style.backgroundColor = "green";
-        // error3.textContent = 'Mobile No is valid'
-
-        error3.innerText='Mobile No is valid';
-        error3.style.color='Green';
-    }
-    else{
-        // error3.style.backgroundColor = 'red';
-        // error3.textContent = 'Mobile No is invalid';
-
-        error3.innerText='Mobile No is invalid';
-        error3.style.color='Red';
-    }
-
 }
 
